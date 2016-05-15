@@ -9,13 +9,13 @@
       event.preventDefault();
 
       var $arrVal = $(this).serialize();
-      //ここは成功する
-      console.log($arrVal);
+      // console.log($arrVal);
 
       $.post(
       "post.php",
       $arrVal,
       function(data){
+        console.log($arrVal);
         alert('ok');
       }
 
